@@ -48,4 +48,4 @@ swagger: `http://localhost:3002/api-docs`
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+[MIT licensed](LICENSE).
