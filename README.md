@@ -25,8 +25,8 @@ npm start
 cd client
 npm run dev
 ```
-- database ui will be running on `localhost:8081`
-- client will be running on `localhost:5173`
+- database ui will be running on `http://localhost:8081`
+- client will be running on `http://localhost:5173`
 
 
 ## Testing
@@ -34,7 +34,7 @@ npm run dev
 - for both integration tests and e2e tests db, and server and client should all be running
 
 ```bash
-# ruu backend integration tests
+# run backend integration tests
 $ cd sever
 $ npm run int-test
 # run frontend e2e tests
@@ -43,7 +43,7 @@ $ npm run e2e-test
 ```
 
 ## Documentation
-swagger: `localhost:3002/api-docs`
+swagger: `http://localhost:3002/api-docs`
 
 
 ## License
