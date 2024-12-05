@@ -1,7 +1,9 @@
 
+![alt text](preview-screenshot.png)
+
 ## Description
 
-This is a fullstack chat applicaiton utilizing React (Vite), Node.js, Express, Socket.io, MongoDB (in docker), and Swagger API documentation while utilizing Typescript. There are also server integration tests and client e2e tests.  
+This is a fullstack real-time chat applicaiton utilizing React (Vite), Node.js, Express, Socket.io, MongoDB (in docker), and Swagger API documentation while utilizing Typescript. There are also server integration tests and client e2e tests.  
 
 ## Installation
 
@@ -27,6 +29,8 @@ npm run dev
 ```
 - database ui will be running on `http://localhost:8081` [http://localhost:8081](http://localhost:8081)
 - client will be running on `http://localhost:5173` [http://localhost:5173](http://localhost:5173)
+
+- Note: the login screen only requires entering a unique name so that you can be identified in the chat room
 
 
 ## Testing

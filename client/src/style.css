@@ -71,7 +71,7 @@ body, html {
   .chats_header {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
   }
   
   .chats_icon {
