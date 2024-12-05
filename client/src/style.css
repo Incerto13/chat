@@ -1,0 +1,286 @@
+body, html {
+    height: 100vh; /* Ensure the body and html take full height of the viewport */
+    margin: 0;    /* Remove default margin */
+    background-color: #ece5dd;
+    font-family: Arial, sans-serif; /* Use a clean, system font */
+  }
+  
+  /* Ensure containers are responsive and don't collapse on smaller screens */
+  .container { 
+    display: flex;              /* Enable flexbox layout */
+    flex-direction: column;     /* Stack elements vertically */
+    min-height: 100vh;          /* Ensure the container takes full viewport height */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* App  */
+  .App {
+    max-height: 100%;
+    padding: 20px;
+  }
+  
+  /* Login  */
+  .login_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .login_icon {
+    margin-right: 10px;
+    color: rgb(4, 170, 170);
+    font-size: 30px;
+  }
+  
+  .login_form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .login_form input {
+    margin: 10px;
+    height: 50px;
+    width: 70%; /* Adjust width to be more responsive */
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgb(4, 170, 170);
+    font-size: 15px;
+    padding-inline: 10px;
+  }
+  
+  .login_form button {
+    width: 25%; /* Adjust button width */
+    height: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #075e54;
+    border-width: 0;
+    color: #fff;
+    margin: 10px;
+  }
+  
+  /* Chat Container  */
+  .chats_header {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+  }
+  
+  .chats_icon {
+    color: red;
+  }
+  
+  .chats_logout {
+    color: rgb(6, 152, 152);
+  }
+  
+  /* Home page */
+  .home {
+    padding: 0 10%;
+  }
+  
+  /* Chats list */
+  .chats_list {
+    height: 75vh;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  .chat_sender {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  
+  .chat_sender img,
+  .chat_receiver img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+  }
+  
+  .chat_sender p {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  .chat_receiver {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  
+  .chat_receiver p {
+    padding: 10px;
+    background-color: #aff6be;
+    border-radius: 10px;
+    max-width: 60%;
+  }
+  
+  /* Input text */
+  .inputtext_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border: 2px solid lightgray;
+    border-radius: 30px 30px;
+    flex-wrap: wrap;  /* Allow input container to wrap on small screens */
+  }
+  
+  .inputtext_container button {
+    width: 20%;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(4, 170, 170);
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .inputtext_container textarea {
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  /* Media Queries for Small Screens */
+  
+  /* Below 600px */
+  @media (max-width: 600px) {
+    .login_form input {
+      width: 80%; /* Make input take up more space on smaller screens */
+    }
+  
+    .login_form button {
+      width: 50%; /* Make button wider for small screens */
+    }
+  
+    .inputtext_container {
+      flex-direction: column; /* Stack input fields vertically on small screens */
+      padding: 5px;
+    }
+  
+    .inputtext_container button {
+      width: 100%; /* Make button full width */
+      margin: 10px 0;
+    }
+  
+    .inputtext_container textarea {
+      width: 100%; /* Make textarea full width */
+      margin-bottom: 10px;
+    }
+  
+    .chat_sender p,
+    .chat_receiver p {
+      max-width: 80%; /* Make chat bubbles wider */
+    }
+  
+    .chat_sender img,
+    .chat_receiver img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  /* Very Small Screens Below 400px (For devices as small as 250px) */
+  @media (max-width: 400px) {
+    .login_form input {
+      width: 100%; /* Make input fields take up the full width */
+      font-size: 14px; /* Reduce input font size */
+    }
+  
+    .login_form button {
+      width: 100%; /* Make button full width */
+      font-size: 16px; /* Smaller font size for buttons */
+    }
+  
+    .inputtext_container {
+      padding: 5px;
+      flex-direction: column; /* Stack input elements vertically */
+    }
+  
+    .inputtext_container button {
+      width: 100%; /* Full-width button on tiny screens */
+      font-size: 16px; /* Make button text smaller */
+    }
+  
+    .inputtext_container textarea {
+      width: 100%; /* Full-width textarea */
+      font-size: 16px; /* Reduce textarea font size */
+    }
+  
+    .chat_sender p,
+    .chat_receiver p {
+      font-size: 14px; /* Make chat text smaller */
+      max-width: 90%; /* Make chat bubbles wider */
+    }
+  
+    .chat_sender img,
+    .chat_receiver img {
+      width: 20px; /* Smaller chat avatar images */
+      height: 20px;
+    }
+  
+    /* Further reduce font size for text on ultra-small screens */
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  /* Extremely Small Screens Below 250px */
+  @media (max-width: 250px) {
+    .login_form input {
+      width: 100%;
+      font-size: 12px; /* Make text smaller */
+    }
+  
+    .login_form button {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .inputtext_container button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .inputtext_container textarea {
+      font-size: 14px;
+    }
+  
+    .chat_sender p,
+    .chat_receiver p {
+      font-size: 12px; /* Make chat text even smaller */
+      max-width: 90%;
+    }
+  
+    .chat_sender img,
+    .chat_receiver img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    /* Scale down general text sizes */
+    h1 {
+      font-size: 1.6em;  /* Make heading smaller */
+    }
+  }
+  

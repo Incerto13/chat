@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // or ESNext
+    "module": "CommonJS", // CommonJS is required for Jest
+    "moduleResolution": "node",
+    "strict": true, // optional, but recommended for type safety
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["/**/*"]
+}
