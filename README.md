@@ -25,8 +25,8 @@ npm start
 cd client
 npm run dev
 ```
-- database ui will be running on `http://localhost:8081`
-- client will be running on `http://localhost:5173`
+- database ui will be running on `http://localhost:8081` [http://localhost:8081](http://localhost:8081)
+- client will be running on `http://localhost:5173` [http://localhost:5173](http://localhost:5173)
 
 
 ## Testing
@@ -43,9 +43,8 @@ $ npm run e2e-test
 ```
 
 ## Documentation
-swagger: `http://localhost:3002/api-docs`
+swagger: [http://localhost:3002/api-docs](http://localhost:3002/api-docs)
 
 
 ## License
-
 [MIT licensed](LICENSE).
